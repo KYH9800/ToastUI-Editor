@@ -1,7 +1,7 @@
 // pages/_app.js
 import Head from 'next/head';
-import PropTypes from 'prop-types';
-// import AppLayout from '../components/AppLayout';
+// import PropTypes from 'prop-types';
+import wrapper from '../store/createStore';
 
 const MyApp = ({ Component, pageProps }) => {
   return (
@@ -15,8 +15,8 @@ const MyApp = ({ Component, pageProps }) => {
   );
 };
 
-MyApp.propTypes = {
-  Component: PropTypes.elementType.isRequired,
-};
+// MyApp.propTypes = {
+//   Component: PropTypes.elementType.isRequired,
+// };
 
-export default MyApp;
+export default wrapper.withRedux(MyApp);

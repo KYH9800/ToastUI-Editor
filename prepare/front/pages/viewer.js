@@ -1,13 +1,10 @@
-import React from 'react';
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
-//components
 import AppLayout from '../components/AppLayout';
-import Image from 'next/image';
 
-const TuiEditor = dynamic(() => import('../components/TuiEditor'), { ssr: false });
+const TuiViewer = dynamic(() => import('../components/TuiViewer'), { ssr: false });
 
-export default function Home({}) {
+export default function PostWithTuiEditor({}) {
   return (
     <AppLayout>
       <Head>
@@ -19,15 +16,7 @@ export default function Home({}) {
         <meta name="url" property="og:url" content="http://localhost:3061" key="ogurl" /> */}
       </Head>
 
-      <TuiEditor />
-
-      <Image
-        priority
-        src="/front/components/images/pexels-pixabay-262325.jpeg"
-        // className={utilStyles.borderCircle}
-        height={24}
-        width={24}
-      />
+      <TuiViewer />
     </AppLayout>
   );
 }

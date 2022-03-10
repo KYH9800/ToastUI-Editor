@@ -9,7 +9,7 @@ const AppLayout = ({ children }) => {
       <Link href="/">
         <button type="button">Editor</button>
       </Link>
-      <Link href="/postsPage">
+      <Link href="/viewer">
         <button type="button">PostsPage</button>
       </Link>
       <Children>
