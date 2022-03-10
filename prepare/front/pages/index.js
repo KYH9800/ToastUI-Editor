@@ -1,12 +1,11 @@
 import React from 'react';
 //components
-import AppLayout from '../components/AppLayout';
-import CKEditor from '../components/CKEditor';
+import Editor from '../components/CKEditor';
 
 const Home = () => {
   return (
     <>
-      <CKEditor />
+      <Editor />
     </>
   );
 };

@@ -9,6 +9,8 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@ckeditor/ckeditor5-build-classic": "^33.0.0",
+    "@ckeditor/ckeditor5-react": "^4.0.0",
     "babel-plugin-styled-components": "^2.0.6",
     "next": "^12.1.0",
     "prop-types": "^15.8.1",
