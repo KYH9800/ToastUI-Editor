@@ -7,10 +7,10 @@ const AppLayout = ({ children }) => {
   return (
     <Wrapper>
       <Link href="/">
-        <button type="button">AppLayout</button>
+        <button type="button">Editor</button>
       </Link>
       <Link href="/postsPage">
-        <button type="button">postsPage</button>
+        <button type="button">PostsPage</button>
       </Link>
       <Children>
         <div>{children}</div>

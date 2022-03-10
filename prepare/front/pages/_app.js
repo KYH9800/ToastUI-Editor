@@ -1,7 +1,7 @@
 // pages/_app.js
-import AppLayout from '../components/AppLayout';
 import Head from 'next/head';
 import PropTypes from 'prop-types';
+// import AppLayout from '../components/AppLayout';
 
 const MyApp = ({ Component, pageProps }) => {
   return (
@@ -10,9 +10,7 @@ const MyApp = ({ Component, pageProps }) => {
         <meta charSet="utf-8" />
         <title>NodeBird</title>
       </Head>
-      <AppLayout>
-        <Component {...pageProps} />
-      </AppLayout>
+      <Component {...pageProps} />
     </>
   );
 };
