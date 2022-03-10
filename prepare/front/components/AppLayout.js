@@ -7,12 +7,14 @@ const AppLayout = ({ children }) => {
   return (
     <Wrapper>
       <Link href="/">
-        <button>AppLayout</button>
+        <button type="button">AppLayout</button>
       </Link>
       <Link href="/postsPage">
-        <button>postsPage</button>
+        <button type="button">postsPage</button>
       </Link>
-      <div className="children">{children}</div>
+      <Children>
+        <div>{children}</div>
+      </Children>
     </Wrapper>
   );
 };
@@ -20,9 +22,9 @@ const AppLayout = ({ children }) => {
 export default AppLayout;
 
 const Wrapper = styled.div`
-  margin-top: 3%;
   text-align: center;
-  .children {
-    margin-top: 3%;
-  }
+  margin-top: 3%;
+`;
+const Children = styled.div`
+  margin-top: 3%;
 `;
