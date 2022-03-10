@@ -1,9 +1,13 @@
 import React from 'react';
 //components
-import Editor from '../components/CKEditor';
+import TuiEditor from '../components/TuiEditor';
 
 const Home = () => {
-  return <>{/* <Editor /> */}</>;
+  return (
+    <>
+      <TuiEditor />
+    </>
+  );
 };
 
 export default Home;
