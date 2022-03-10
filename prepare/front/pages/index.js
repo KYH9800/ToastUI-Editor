@@ -3,11 +3,7 @@ import React from 'react';
 import Editor from '../components/CKEditor';
 
 const Home = () => {
-  return (
-    <>
-      <Editor />
-    </>
-  );
+  return <>{/* <Editor /> */}</>;
 };
 
 export default Home;
